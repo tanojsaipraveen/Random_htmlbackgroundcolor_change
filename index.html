@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body{
+        background-color: aqua;
+    }
+.main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
+}
+#btn{
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+    outline:none;
+    font-size: medium;
+}
+#cc{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+   
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <button id="btn" onclick="myFunction()">Generate</button>
+       
+        <h3 id="cc"></h3>
+    </div>
+    
+</body>
+<script>
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+    function myFunction() {
+        var characters = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+        var colorcode = [];
+        for (var i = 0; i < 6; i++) {
+            var index = getRandomInt(characters.length);
+            colorcode.push(characters[index]);
+        }
+        var string = String("#" + colorcode);
+        var finalcolorcode = "#" + colorcode.join("");
+        
+        document.body.style.backgroundColor = finalcolorcode;
+        document.getElementById("cc").innerHTML=finalcolorcode;
+    }
+
+</script>
+</html>
