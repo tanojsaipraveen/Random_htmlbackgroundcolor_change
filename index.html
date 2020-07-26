@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <div id="login_div">
+    <input type="text" id="user" placeholder="username"><br>
+    <input type="password" id="pass" placeholder="password">
+    <br>
+    <button id="btnlog" onclick="login()">Login</button>
+   </div>
+    <div id="user_login">
+        <h1>LOGIN</h1>
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBKF7Q5kkcM6GRDxXxM6RZywohS-Wj7CSc",
+    authDomain: "mydemo-73d4e.firebaseapp.com",
+    databaseURL: "https://mydemo-73d4e.firebaseio.com",
+    projectId: "mydemo-73d4e",
+    storageBucket: "mydemo-73d4e.appspot.com",
+    messagingSenderId: "1019085299072",
+    appId: "1:1019085299072:web:cbe5760f8103c3df3f7565",
+    measurementId: "G-D2NVQMM85N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="index.js"></script>
+</body>
+
+</html>
