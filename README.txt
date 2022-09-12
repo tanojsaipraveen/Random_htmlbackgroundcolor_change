@@ -1,6 +1,6 @@
 
 TITLE: 
-Roxy - Bootstrap 4 template built by GetTemplates.co
+Tanoj - Bootstrap 4 template built by GetTemplates.co
 
 AUTHOR:
 DESIGNED & DEVELOPED by GetTemplates.co and FreeHTML5.co
